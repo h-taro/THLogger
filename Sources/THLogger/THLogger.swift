@@ -94,7 +94,7 @@ extension THLogger {
         line: Int
     ) {
         #if !RELEASE
-        print("[\(level.rawValue.uppercased()) \(getClassName(from: file)).\(function) \(line): \(message)]")
+        print("[\(level.rawValue.uppercased())] \(getClassName(from: file)).\(function) #\(line): \(message)")
         #endif
     }
 }
