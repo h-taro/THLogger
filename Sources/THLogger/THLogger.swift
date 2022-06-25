@@ -1,6 +1,8 @@
 public struct THLogger {
-    public private(set) var text = "Hello, World!"
-
-    public init() {
+    public enum LogLevel: String {
+        case debug
+        case info
+        case warning
+        case error
     }
 }
